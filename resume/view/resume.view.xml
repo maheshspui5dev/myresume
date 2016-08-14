@@ -6,7 +6,7 @@
 	xmlns="sap.m">
 	<Shell>
 	<App>
-		<SplitApp id="SplitAppResumeId" mode = "HideMode" initialDetail="detail" initialMaster="master" orientationChange="onOrientationChange">
+		<SplitApp id="SplitAppResumeId" mode = "ShowHideMode" orientationChange="onOrientationChange">
 	</SplitApp>
 	</App>
 	</Shell>
