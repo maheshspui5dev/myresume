@@ -1,0 +1,13 @@
+<mvc:View
+	height="100%"
+	controllerName="resume.controller.resume"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<Shell>
+	<App>
+		<SplitApp id="SplitAppResumeId" initialDetail="detail" initialMaster="master" orientationChange="onOrientationChange">
+	</SplitApp>
+	</App>
+	</Shell>
+</mvc:View>
