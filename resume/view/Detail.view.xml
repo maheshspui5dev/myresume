@@ -1,0 +1,245 @@
+<mvc:View
+	height="100%"
+	controllerName="resume.controller.Detail"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+		<Page
+		title="Resume"
+		class="sapUiContentPadding"
+		showNavButton="false" >
+		<content>
+	<IconTabBar
+		id="idIconTabBarMulti"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding"
+		backgroundDesign  = "Transparent">
+		<items>
+			<IconTabFilter
+				text="Overview"
+				icon="sap-icon://hint">
+				<Panel expandable="true" expanded="true" headerText="Career Summary" width="auto" class="sapUiResponsiveMargin">
+		<content>
+				<core:HTML content='&lt;ul&gt;
+	&lt;li&gt;Versed in both agile and waterfall development techniques.&lt;/li&gt;
+	&lt;li&gt;Tested front-end code in multiple browsers to ensure cross-browser compatibility.&lt;/li&gt;
+	&lt;li&gt;Consulted and documented UI best practices and code standards.&lt;/li&gt;
+	&lt;li&gt;Expertise in current and emerging trends and techniques.&lt;/li&gt;
+	&lt;li&gt;Proficient in coding and developing the new program&lt;/li&gt;
+&lt;/ul&gt;'>
+			</core:HTML>
+			
+		</content>
+	</Panel>
+	<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="Personal Qualities" />
+				<ToolbarSpacer />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+			<core:HTML content='
+&lt;ul&gt;
+	&lt;li&gt;Strong leadership and motivational skills.&lt;/li&gt;
+	&lt;li&gt;Ability to produce best result in pressure situation.&lt;/li&gt;
+	&lt;li&gt;Ability to work in team as well as in group.&lt;/li&gt;
+	
+&lt;/ul&gt;'>
+			</core:HTML>
+		</content>
+	</Panel>
+			</IconTabFilter>
+			<IconTabFilter
+			text="Skills"
+				icon="sap-icon://leads">
+				<Panel class="sapUiDemoFlexBoxSizeAdjustments">
+				<headerToolbar>
+					<Toolbar>
+						<Title level="H2" text="Technical Skils" />
+					</Toolbar>
+				</headerToolbar>
+			<l:HorizontalLayout class="sapUiSmallMargin" >
+		<Label text="SAPUI5" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator enabled="false" maxValue="5" class="sapUiSmallMarginBottom" value="3"   tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+		<Label text="SAP ABAP" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator enabled="false" maxValue="5" class="sapUiSmallMarginBottom" value="3"   tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+				<l:HorizontalLayout class="sapUiSmallMargin" >
+		<Label text="Javascript" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator enabled="false" maxValue="5" class="sapUiSmallMarginBottom" value="3"   tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+		<Label text="HTML CSS" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator maxValue="5" enabled="false" class="sapUiSmallMarginBottom" value="3"   tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+	
+		<Label text="Jquery" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator maxValue="5" class="sapUiSmallMarginBottom" value="2" enabled="false"  tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+	
+		<Label text="CoreJava" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator maxValue="5" enabled="false" class="sapUiSmallMarginBottom" value="4"   tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+	
+		<Label text="JSP/Servlets" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator maxValue="5" class="sapUiSmallMarginBottom" enabled="false" value="2"   tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+		<Label text="Dojo" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator maxValue="5" class="sapUiSmallMarginBottom" value="3"   enabled="false" tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+		<Label text="OpenLayer3--maps" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator maxValue="5" class="sapUiSmallMarginBottom" value="3" enabled="false"  tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+	<l:HorizontalLayout class="sapUiSmallMargin" >
+		<Label text="ESRI-maps" class="sapUiTinyMarginTop" design="Bold" />
+						<RatingIndicator maxValue="5" class="sapUiSmallMarginBottom" value="3"  enabled="false" tooltip="Rating Tooltip" />
+	</l:HorizontalLayout>
+			</Panel>
+			
+			</IconTabFilter>
+			<IconTabFilter
+				icon="sap-icon://education"
+				text="Education">
+				<Table >
+		<columns>
+			<Column id="College"  minScreenWidth="Tablet" demandPopin="true"  hAlign="Left"><Text text="College" /></Column>
+			<Column id="Branch" minScreenWidth="Tablet" demandPopin="true"  hAlign="Left"><Text text="Degree" /></Column>
+			<Column id="Year" minScreenWidth="Tablet" demandPopin="true" hAlign="Left"><Text text="Year" /></Column>
+			<Column id="Percentage" minScreenWidth="Tablet" demandPopin="true" hAlign="Left"><Text text="Percentage" /></Column>
+			<Column id="Location" minScreenWidth="Tablet" demandPopin="true" hAlign="Left"><Text text="Location" /></Column>
+	
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier  text="PESIT,west campus " class="sapMTableContentMargin" />
+					<Text text="MTech" />
+					<Text text="2015" />
+					<ObjectNumber
+							number="71.5"
+							unit="%" />
+							<Text text="Bangalore" />
+				</cells>
+			</ColumnListItem>
+				<ColumnListItem>
+				<cells>
+					<ObjectIdentifier  text="Govt.SKSJTI " class="sapMTableContentMargin" />
+					<Text text="BE" />
+					<Text text="2012" />
+					<ObjectNumber
+							number="63.7"
+							unit="%" />
+							<Text text="Bangalore" />
+				</cells>
+			</ColumnListItem>
+			
+				<ColumnListItem>
+				<cells>
+					<ObjectIdentifier  text="Guru Nanak " class="sapMTableContentMargin" />
+					<Text text="PUC" />
+					<Text text="2008" />
+					<ObjectNumber
+							number="68.5"
+							unit="%" />
+							<Text text="Bidar" />
+				</cells>
+			</ColumnListItem>
+							<ColumnListItem>
+				<cells>
+					<ObjectIdentifier  text="SDMPS " class="sapMTableContentMargin" />
+					<Text text="SSLC" />
+					<Text text="2006" />
+					<ObjectNumber
+							number="81.33"
+							unit="%" />
+							<Text text="Bidar" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+			</IconTabFilter>
+			
+			<IconTabFilter
+				icon="sap-icon://customer-and-contacts"
+				text = "Contact">
+				<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplay480_Trial"
+			maxContainerCols="3"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="4"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			columnsXL="3"
+			columnsL="2"
+			columnsM="2">
+			<f:content>
+				<core:Title text="Home" />
+				<Label text="Name" />
+				<Text text="Yallaing Tent House" />
+				<Label text="Street/No" />
+				<Text text="Fathehadarwaja" />
+				<Label text="City" />
+				<Text text="Bidar-585401" />
+				<core:Title text="Online" />
+				<Label text="Facebook" />
+				<Link
+				text="Mahesh Gonda"
+				target="_blank"
+				href="https://www.facebook.com/MaheshGondaKS" />
+				<Label text="Twitter" />
+				<Text text="/twitter" />
+				<core:Title text="Contact Details" />
+				<Label text="Email" />
+				<Text text="MAHESHMALKNOOR@GMAIL.COM" />
+				<Label text="Tel." />
+				<Text text="9845984610" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+			</IconTabFilter>
+			
+			
+			<IconTabFilter
+				icon="sap-icon://download"
+				text = "Resume">
+				<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+			<Link
+				text="Download Resume in PDF"
+				target="_blank"
+				href="resume/resumes/MaheshGonda.pdf"/>
+			<Link
+				text="Download Resume in MS Word"
+				target="_blank"
+				href="resume/resumes/MaheshGonda.doc" />
+		</l:content>
+	</l:VerticalLayout>
+			</IconTabFilter>
+			
+			
+		</items>
+	</IconTabBar>
+	</content>
+			<footer>
+			<Toolbar>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

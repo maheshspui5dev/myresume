@@ -1,0 +1,46 @@
+<mvc:View
+	height="100%"
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="resume.controller.Master"
+	xmlns="sap.m"
+xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<Page
+		title="Mahesh Gonda"
+		class="sapUiContentPadding"
+		showNavButton="false" >
+
+		<content>
+		<HBox>
+				<Image
+					src="resume/image/MAHESHGONDA.jpg"
+					densityAware="false"
+					class="sapUiSmallMarginBegin"
+					width="230px" 
+					height="230px">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Image>
+			</HBox>
+			<VBox>
+		<core:HTML content='&lt;h3&gt;Software Engineer&lt;/h3&gt;
+&lt;p&gt;At: &lt;a href=&quot;http://www.saartha.com/&quot; target=&quot;_blank&quot;&gt;Saartha Labs Pvt Ltd&lt;/a&gt; - Since May 18 2015 to till date .&lt;/p&gt;
+&lt;p&gt;Address:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;#11 5th main Hoysala Nagar TC palya main road&lt;/li&gt;
+	&lt;li&gt;9845984610&lt;/li&gt;
+	&lt;li&gt;maheshmalknoor@gmail.com&lt;/li&gt;
+
+&lt;/ul&gt;'>
+			</core:HTML>
+			</VBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
