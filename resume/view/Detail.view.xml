@@ -6,10 +6,12 @@
 	xmlns:f="sap.ui.layout.form"
 	xmlns:l="sap.ui.layout"
 	xmlns="sap.m">
-		<Page
+		<Page id="detailPage"
 		title="Resume"
 		class="sapUiContentPadding"
-		showNavButton="false" >
+		showNavButton="false" 
+		navButtonPress = "handleBackButton"
+		>
 		<content>
 	<IconTabBar
 		id="idIconTabBarMulti"

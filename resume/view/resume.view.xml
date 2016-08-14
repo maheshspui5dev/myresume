@@ -4,10 +4,6 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
 	xmlns="sap.m">
-	<Shell>
-	<App>
-		<SplitApp id="SplitAppResumeId" mode = "HideMode" orientationChange="onOrientationChange">
+		<SplitApp id="SplitAppResumeId" >
 	</SplitApp>
-	</App>
-	</Shell>
 </mvc:View>

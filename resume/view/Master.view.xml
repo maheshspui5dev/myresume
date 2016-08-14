@@ -40,6 +40,7 @@ xmlns:l="sap.ui.layout"
 		<footer>
 			<Toolbar>
 				<ToolbarSpacer/>
+				<Button press="onPress" id="moreId" text="More" visible="false" />
 			</Toolbar>
 		</footer>
 	</Page>

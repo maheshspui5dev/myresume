@@ -5,9 +5,20 @@ sap.ui.controller("resume.controller.Detail", {
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf resume.Detail
 */
-//	onInit: function() {
-//
-//	},
+	onInit: function() {
+		if(sap.ui.Device.system.phone){
+			var page = this.getView().byId("detailPage");
+			page.setShowNavButton(true);
+////			splitApp.hideMaster();
+////			splitApp.setMode(sap.m.SplitAppMode.HideMode);
+//			
+			return ;
+//			
+		}
+	},
+	handleBackButton: function(){
+		this.splitApp.to("masterId");
+	},
 
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

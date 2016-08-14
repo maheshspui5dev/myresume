@@ -19,14 +19,31 @@ sap.ui.controller("resume.controller.resume", {
 		
 		var master  = sap.ui.view({id:"masterId", viewName:"resume.view.Master", type:sap.ui.core.mvc.ViewType.XML});
 		
+		
 		var detail  = sap.ui.view({id:"detailId", viewName:"resume.view.Detail", type:sap.ui.core.mvc.ViewType.XML});
 		
 		var splitApp = this.getView().byId("SplitAppResumeId");
 		splitApp.addMasterPage(master);
 		splitApp.setInitialMaster(master);
+		master.getController().splitApp= splitApp;
 		
 		splitApp.addDetailPage(detail);
 		splitApp.setInitialDetail(detail);
+		detail.getController().splitApp= splitApp;
+		
+		
+//		var splitApp = this.getView().byId("SplitAppResumeId");
+		if(sap.ui.Device.system.phone){
+//			this.getView().byId("moreId").setVisible(true);
+//			splitApp.hideMaster();
+//			splitApp.setMode(sap.m.SplitAppMode.HideMode);
+//			
+//			return ;
+//			
+		}
+	
+		splitApp.setMode(sap.m.SplitAppMode.ShowHideMode);
+		
 	},
 	
 
